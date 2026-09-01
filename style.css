@@ -198,3 +198,15 @@ body.lightbox-open{overflow:hidden}.image-lightbox{position:fixed;inset:0;z-inde
 .fitness-ia{margin-top:24px}.fitness-ia .case-thumb{height:360px;object-fit:contain;background:#fff}
 .fitness-workspace-crop .fitness-phone-shot{height:390px;object-fit:contain;background:#171b1d}
 @media(max-width:820px){.fitness-phone-pair{grid-template-columns:1fr 1fr}.fitness-phone-pair .case-thumb{height:260px}.fitness-ia .case-thumb{height:auto}}
+
+/* ===== V3.9: real contact + external proof links ===== */
+.contact-primary{display:flex;align-items:baseline;gap:22px;flex-wrap:wrap;margin-top:10px}
+.contact-primary .email{margin-top:0}
+.contact-phone{font:600 13px "DM Mono",monospace;color:var(--muted);border-bottom:1px solid transparent}
+.contact-phone:hover{color:var(--ink);border-bottom-color:var(--ink)}
+.contact-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:38px;max-width:860px}
+.contact-links a{display:flex;flex-direction:column;gap:9px;padding:19px 20px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.48);transition:transform .18s ease,background .18s ease}
+.contact-links a:hover{transform:translateY(-2px);background:rgba(255,255,255,.78)}
+.contact-links span{font:500 8px "DM Mono",monospace;letter-spacing:.1em;color:var(--muted)}
+.contact-links b{font-size:13px;letter-spacing:-.01em}
+@media(max-width:640px){.contact-links{grid-template-columns:1fr}.contact-primary{align-items:flex-start;flex-direction:column;gap:10px}.contact-phone{font-size:11px}}
